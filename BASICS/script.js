@@ -5,18 +5,18 @@ a=10;
 console.log(a);
 let name="mine";
 
-let tina={
+// let tina={
 
-    name:'tinu',
-    height:170,
-    feature:'most capable person on planet',
-    characteristic:'extremely intelligent',
-      work: function()
-      {
-        console.log("Earning 3l/month from work");
-      }
+//     name:'tinu',
+//     height:170,
+//     feature:'most capable person on planet',
+//     characteristic:'extremely intelligent',
+//       work: function()
+//       {
+//         console.log("Earning 3l/month from work");
+//       }
 
-};
+// };
 
 
 function createRec(a,b)
@@ -50,3 +50,39 @@ function Square(a,b)
 }
 
 let sqobj= new Square(2,'green');
+
+// Dynamic nature of objects
+
+sqobj.side=100;
+sqobj.name='cutie';
+console.log(sqobj);
+
+let tina={
+
+    name:'tinu',
+    height:170,
+    feature:'most capable person on planet',
+    characteristic:'extremely intelligent',
+    //   work: function()
+    //   {
+    //     console.log("Earning 3l/month from work");
+    //   }
+
+};
+
+// FOR-IN LOOP
+
+for(let key in tina)
+{
+    console.log(key,':',tina[key]);
+}
+
+// ÷FOR-OFF LOOP IN ARRAYS
+// Object cloning
+let src={
+    a:10,
+    b:20,
+}
+
+let dest={...src};
+src.a++;
