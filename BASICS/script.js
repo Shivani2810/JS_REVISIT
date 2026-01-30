@@ -17,3 +17,36 @@ let tina={
       }
 
 };
+
+
+function createRec(a,b)
+{
+    let rectangle=
+    {
+        length:a,
+        breadth:b,
+
+        draw:function()
+        {
+            console.log('drawing function');
+        }
+    }
+    return rectangle;
+}
+
+
+let obj=createRec(10,20);
+
+// Constructor function:follows the pascal notation:The first letter of each and every word is capital.
+function Square(a,b)
+{
+   this.side=a;
+   this.color=b;
+
+   this.draw=function()
+   {
+    console.log('drawing the square N testing the constructor function');
+   }
+}
+
+let sqobj= new Square(2,'green');
