@@ -113,4 +113,4 @@ let ourFindings= courses.find(course=>course.id==1);
 console.log(ourFindings);
 
 
-// Increasing the readability using the arrow function
+// Increasing the readability using the arrow function// contribution check
