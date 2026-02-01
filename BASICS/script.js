@@ -86,3 +86,31 @@ let src={
 
 let dest={...src};
 src.a++;
+
+
+// Learning the new string-primitive
+
+let firstname='shivani';
+let lastname= new String ('OG');
+
+
+let message='this is the \"best\" time to be at your full potential'; 
+
+
+console.log('Testing the callback functions');
+
+// callback functions
+
+let courses=[
+    {id:1,coursename:'maths'},
+    {id:2,coursename:'bio'},
+    {id:3,coursename:'english'}
+]
+
+console.log(courses);
+
+let ourFindings= courses.find(course=>course.id==1);
+console.log(ourFindings);
+
+
+// Increasing the readability using the arrow function
