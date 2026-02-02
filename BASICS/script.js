@@ -114,3 +114,23 @@ console.log(ourFindings);
 
 
 // Increasing the readability using the arrow function// contribution check
+let numbers=[1,-2,13,4];
+for(let key of numbers)
+{
+console.log('student nuumber ' + key);
+}
+
+console.log(numbers);
+console.log("printing the numbers in the sorted manner");
+numbers.sort();
+console.log(numbers);
+// TODO: Custom comparator!!
+
+// Dealing with functions
+
+function sum(a,b)
+{
+    return a+b;
+}
+let ans=sum(1,20);
+console.log(ans);
